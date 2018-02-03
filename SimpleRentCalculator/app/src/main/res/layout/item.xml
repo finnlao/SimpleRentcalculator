@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:text="Size"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="Arial"
+        android:inputType="numberDecimal"
+        android:text="100"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="85dp"
+        android:layout_height="39dp"
+        android:text="Type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+</android.support.constraint.ConstraintLayout>
