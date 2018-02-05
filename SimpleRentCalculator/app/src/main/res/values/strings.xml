@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Simple Rent Calculator</string>
+    <string name="title_activity_summary_screen">SummaryScreen</string>
 </resources>

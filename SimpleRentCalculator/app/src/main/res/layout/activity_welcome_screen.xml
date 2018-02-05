@@ -28,19 +28,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="42dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginRight="84dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:text="Monthly Rent"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textSize="22sp"
-            app:layout_constraintEnd_toStartOf="@+id/monthlyRent"
+            app:layout_constraintEnd_toStartOf="@+id/messageBox"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/monthlyRent" />
+            app:layout_constraintTop_toTopOf="@+id/messageBox" />
 
         <EditText
-            android:id="@+id/monthlyRent"
+            android:id="@+id/messageBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -55,18 +55,13 @@
             android:id="@+id/sizeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="84dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="84dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:text="Room Size"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textSize="22sp"
-            app:layout_constraintEnd_toStartOf="@+id/sizeText"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/sizeText" />
+            app:layout_constraintTop_toBottomOf="@+id/typeLabel" />
 
         <EditText
             android:id="@+id/sizeText"
@@ -86,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="Add Room"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/roommateName" />
@@ -95,28 +90,24 @@
             android:id="@+id/typeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="76dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="76dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="32dp"
             android:text="Room Type"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textSize="22sp"
-            app:layout_constraintEnd_toStartOf="@+id/typeEditText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/typeEditText" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/typeEditText"
             android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginTop="24dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Name"
+            android:textColor="@android:color/background_dark"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,17 +116,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="20dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="24dp"
             android:text="Roommate Name"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textSize="22sp"
             app:layout_constraintEnd_toStartOf="@+id/roommateName"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/roommateName" />
+            app:layout_constraintTop_toBottomOf="@+id/sizeLabel" />
 
         <EditText
             android:id="@+id/roommateName"
@@ -167,17 +156,30 @@
             android:id="@+id/calculate"
             android:layout_width="168dp"
             android:layout_height="47dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="Calculate"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/monthlyRent" />
+            app:layout_constraintTop_toBottomOf="@+id/messageBox" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Settings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculate" />
 
     </android.support.constraint.ConstraintLayout>
+
 </android.support.v4.widget.NestedScrollView>
